@@ -1,9 +1,11 @@
 package com.example.insertnamehere
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log.d
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         bigButton.setOnClickListener {
-            d("Niek","button was pressed");
+            d("Niek","button was pressed")
+            startActivity(Intent(this, AboutMe::class.java))
         }
     }
 }

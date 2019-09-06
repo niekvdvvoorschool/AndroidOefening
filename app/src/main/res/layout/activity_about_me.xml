@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="25dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi im Niek!"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_marginTop="25dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in rebus apertissimis nimium longi sumus. At eum nihili facit; Haec igitur Epicuri non probo, inquam. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Vestri haec verecundius, illi fortasse constantius. Idemque diviserunt naturam hominis in animum et corpus." />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
 
 </LinearLayout>

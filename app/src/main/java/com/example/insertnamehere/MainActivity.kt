@@ -26,5 +26,11 @@ class MainActivity : AppCompatActivity() {
             d("Niek","Clicks: " + clicks)
             textView5.setText("" + clicks + " clicks")
         }
+
+        bigButton3.setOnClickListener {
+            clicks = 0;
+            d("Niek","Clicks resetted")
+            textView5.setText("" + clicks + " clicks")
+        }
     }
 }

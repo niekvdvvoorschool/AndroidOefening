@@ -9,13 +9,22 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    var clicks = 0;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         bigButton.setOnClickListener {
             d("Niek","button was pressed")
             startActivity(Intent(this, AboutMe::class.java))
+        }
+
+        bigButton2.setOnClickListener {
+            clicks++;
+            d("Niek","Clicks: " + clicks)
+            textView5.setText("" + clicks + " clicks")
         }
     }
 }
